@@ -128,16 +128,23 @@
         <input type="password" placeholder="enter password" name="password"><br><br>
         <input type="color"><br><br>
         <input type="file"><br><br>
-        <input type="number"><br><br>
+        <input type="number" min="50" max="100" step="5"><br><br>
         <input type="time"><br><br>
         <input type="radio"><br><br>
-        <input type="range"><br><br>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" value="75" id="cheese" min="0" max="100" name="cheese_level"><br><br>
+        </p>
         <input type="search"><br><br>
         <input type="tel"><br><br>
         <input type="submit" value="Submit"><br><br>
         <input type="reset" value="Reset"><br><br>
         <input type="checkbox" name="CheckboxName" id="CheckboxId"><br><br>
         <input type="email" name="EmailName" id="EmailId"><br><br>
+        <p>
+            <label for="textareatry">Textarea example</label>
+            <textarea id="textareatry" rows="10" cols="40" placeholder="Neco napis...<"></textarea>
+        </p>
     </form>
     <hr><br>
     <p>
@@ -161,6 +168,51 @@
         <button type="reset">Reset button</button>
         <button type="submit">Submit button</button>
     </form>
+
+    <hr><br>
+    <h1>Radio buttons and checkboxes Demo</h1>
+    <h2>Checkbox</h2>
+    <form action="SecondPage.html">
+        <input type="checkbox" name="souhlas" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">Small</label>
+            <input type="radio" name="velikost" id="xs" value="xs">
+            <label for="xl">Middle</label>
+            <input type="radio" name="velikost" id="xl" value="xl">
+            <label for="xxl">Large</label>
+            <input type="radio" name="velikost" id="xxl" value="xxl">
+        </p>
+        <p>
+            <label for="select-element">Choose a element:</label>
+            <select name="zvirata" id="select-element">
+                <option value="">Please choose an option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="spider">Spider</option>
+            </select>
+        </p>
+        <input type="submit" value="Submit changes">
+    </form>
+
+    <hr><br>
+    <h1>Validation Demo</h1>
+    <form action="SecondPage.html">
+        <label for="firstname">Enter first name</label>
+        <input type="text" name="first" id="firstname" required><br>
+        <label for="lastname">Enter last name</label>
+        <input type="text" name="first" id="lastname" minlength="5" maxlength="15" required><br>
+        <label for="email">Enter email</label>
+        <input type="email" name="email" id="email" required><br>
+        <button>Submit</button>
+    </form>
+
+    <h1>Maraton registrace demo</h1>
+    <a href="MarathonForm.html">Registrace na maraton</a>
+
+
 </body>
+
 
 </html>
