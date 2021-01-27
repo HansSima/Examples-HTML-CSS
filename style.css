@@ -1,7 +1,15 @@
-h1 {
+* {
+    color: blue;
+}
+
+h1,
+h2 {
     text-align: center;
     text-decoration: blue underline wavy;
     letter-spacing: 10px;
+    font-size: 80px;
+    font-family: Avant Garde, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 button {
@@ -18,4 +26,14 @@ p {
 a {
     text-decoration: none;
     color: red;
+    text-transform: uppercase;
+}
+
+#css-button {
+    background-color: rgb(49, 82, 109);
+}
+
+.animals {
+    color: rgb(248, 4, 187);
+    background-color: rgb(43, 255, 0);
 }
